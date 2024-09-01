@@ -31,3 +31,14 @@ button{
     border-radius: 2rem;
 
 }
+.clock{
+    height: 20px;
+    width: 100px;
+    background-color: yellow;
+    color: black;
+    margin-left: 5rem;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 1000;
+}

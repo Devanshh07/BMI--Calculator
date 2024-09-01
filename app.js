@@ -2,6 +2,7 @@
 
 const form = document.querySelector("form");
 const res= document.querySelector(".result");
+const clock = document.querySelector(".clock");
 
 form.addEventListener("submit",(evt)=>{
     evt.preventDefault();
@@ -18,5 +19,9 @@ form.addEventListener("submit",(evt)=>{
     else{
       res.innerHTML = `${bmi}`
     }
-
 })
+
+setInterval(()=>{
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString();
+},1000)
